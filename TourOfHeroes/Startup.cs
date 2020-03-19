@@ -27,12 +27,13 @@ namespace TourOfHeroes
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            /***
+            /***s
              * Usa o arquivo de configuração appsettings.json para pegar a string e fazer a conexão
              */
-            var connection = Configuration["ConexaoSqlite:SqliteConnectionString"];
-            services.AddDbContext<HeroContext>(options =>
-                options.UseSqlite(connection)
+            var connection = Configuration["ConexaoPSQL:string"];
+            Console.WriteLine(connection);
+            services.AddEntityFrameworkNpgsql().AddDbContext<HeroContext>(options =>
+                options.UseNpgsql(connection)
             );
             services.AddCors(options =>
             {

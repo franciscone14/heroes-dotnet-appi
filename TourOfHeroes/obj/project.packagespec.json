@@ -1,17 +1,16 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\franciscone.junior\\RiderProjects\\TourOfHeroes\\TourOfHeroes\\TourOfHeroes.csproj",
+    "projectUniqueName": "/home/franciscone/Squadra/heroes-dotnet-appi/TourOfHeroes/TourOfHeroes.csproj",
     "projectName": "TourOfHeroes",
-    "projectPath": "C:\\Users\\franciscone.junior\\RiderProjects\\TourOfHeroes\\TourOfHeroes\\TourOfHeroes.csproj",
-    "outputPath": "C:\\Users\\franciscone.junior\\RiderProjects\\TourOfHeroes\\TourOfHeroes\\obj\\",
+    "projectPath": "/home/franciscone/Squadra/heroes-dotnet-appi/TourOfHeroes/TourOfHeroes.csproj",
+    "outputPath": "/home/franciscone/Squadra/heroes-dotnet-appi/TourOfHeroes/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
     "sources": {
-      "https://api.nuget.org/v3": {},
-      "https://www.nuget.org/api/v2": {}
+      "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
       "netcoreapp3.1": {
@@ -29,15 +28,21 @@
       "dependencies": {
         "EntityFramework": {
           "target": "Package",
-          "version": "[7.0.0-beta4, )"
+          "version": "[6.4.0, )"
         },
-        "Microsoft.EntityFrameworkCore.Sqlite": {
+        "Microsoft.EntityFrameworkCore.Design": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
           "target": "Package",
-          "version": "[5.0.0-preview.2.20120.8, )"
+          "version": "[3.1.2, )"
         },
         "Microsoft.EntityFrameworkCore.Tools": {
           "target": "Package",
-          "version": "[5.0.0-preview.2.20120.8, )"
+          "version": "[3.1.2, )"
+        },
+        "Npgsql.EntityFrameworkCore.PostgreSQL": {
+          "target": "Package",
+          "version": "[3.1.2, )"
         }
       },
       "imports": [
@@ -58,7 +63,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
     }
   }
 }
